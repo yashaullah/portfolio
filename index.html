@@ -1,274 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo"> Portfolio</div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Portfolio</div>
 
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-img">
+      <img src="images/pic.jpeg" alt="Profile">
     </div>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-img">
-            <img src="images/pic.jpeg" alt="Profile">
-        </div>
+    <div class="hero-text">
+      <p class="intro">Hello, I'm</p>
+      <h1>Yashaullah Soomro</h1>
+      <h2 class="role">Frontend Developer</h2>
 
-        <div class="hero-text">
-            <p class="intro">Hello, I'm</p>
-            <h1>Yashaullah Soomro</h1>
-            <h2 class="role">Frontend Developer</h2>
+      <div class="buttons">
+        <a href="images/CV.jpeg" class="btn-primary" download>Download CV</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
 
-            <div class="buttons">
-                <a href="images/CV.jpeg" class="btn-primary">Download CV</a>
-                <a href="#contact" class="btn-outline">Contact Me</a>
-            </div>
-
-            <div class="social">
-                <a href="https://www.facebook.com/share/1GaTWDAVZa/" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                    <span>Facebook</span>
-                </a>
-                <a href="https://www.instagram.com/yashaullah_soomro_/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <div class="about-content">
-
-            <div class="about-text">
-                <h2>About Me</h2>
-
-                <p>
-                    I am <strong>Yashaullah Soomro</strong>, a bachelor student currently in my
-                    <strong>3rd semester</strong> of Information Technology (IT).
-                    I am studying at <strong>Shaikh Ayaz University of Shikarpur</strong>.
-                </p>
-
-                <p>
-                    I have a strong interest in learning <strong>new technologies</strong> and
-                    applying them in real‑life projects. Creating responsive and clean
-                    web pages is something I truly enjoy.
-                </p>
-
-                <p>
-                    I am still learning, but I have <strong>basic knowledge of frontend development</strong>
-                    and a natural interest in <strong>coding and problem‑solving</strong>.
-                </p>
-
-                <ul class="about-details">
-                    <li><strong>Name:</strong> Yashaullah Soomro</li>
-                    <li><strong>City:</strong> Shikarpur, Pakistan</li>
-                    <li><strong>Field:</strong> Information Technology (IT)</li>
-                    <li><strong>Interest:</strong> Web Development & Problem Solving</li>
-                </ul>
-            </div>
-
-            <div class="about-image">
-                <img src="images/pic2.jpeg" alt="About">
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills-section">
-
-        <div class="skills-header">
-            <p class="skills-subtitle">What I Know</p>
-            <h2 class="skills-title">My Skills</h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-pen-nib"></i></div>
-                <h3>Graphic Designing</h3>
-                <p>
-                    I have strong understanding of graphic design concepts and
-                    I also hold a Coursera certificate in Adobe tools.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                <h3>Web Development</h3>
-                <p>
-                    I design responsive websites using HTML, CSS and JavaScript
-                    with clean and modern layouts.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-java"></i></div>
-                <h3>Java Programming</h3>
-                <p>
-                    I have good command over Java language concepts and have
-                    completed Object-Oriented Programming.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Coding Skills</h3>
-                <p>
-                    I enjoy writing clean code and continuously improve my
-                    programming logic and structure.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                <h3>Problem Solving</h3>
-                <p>
-                    I have strong problem-solving skills and enjoy finding logical
-                    solutions to coding challenges.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
-                <h3>Freelancing</h3>
-                <p>
-                    I have knowledge of freelancing platforms and understand how
-                    to work with real-world clients.
-                </p>
-            </div>
-
-        </div>
-    </section>
-    
-
-    <!-- PROJECTS SECTION -->
-<section id="projects" class="projects-section">
-    <div class="projects-header">
-        <h2>My Projects</h2>
-        <p>Some of my academic and practical work</p>
+      <div class="social">
+        <a href="https://www.facebook.com/share/1GaTWDAVZa/" target="_blank">
+          <i class="fab fa-facebook-f"></i><span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/yashaullah_soomro_/" target="_blank">
+          <i class="fab fa-instagram"></i><span>Instagram</span>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="projects-grid">
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-content">
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="project-img">
-                <img src="images/pic3.jpeg" alt="Library Management System">
-            </div>
-            <div class="project-content">
-                <h3>Library Management System (GUI)</h3>
-                <p>
-                    Java GUI based system with Admin & Student roles including
-                    book issue, return and record management.
-                </p>
-            </div>
-        </div>
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-line"></span>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="project-img">
-                <img src="images/pic4.jpeg" alt="Graphic Design Work">
-            </div>
-            <div class="project-content">
-                <h3>Graphic Design Work</h3>
-                <p>
-                    Creative graphic design projects using Adobe tools
-                    focusing on branding and visual aesthetics.
-                </p>
-            </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="project-img">
-                <img src="images/pic5.jpeg" alt="Rain Protection System">
-            </div>
-            <div class="project-content">
-                <h3>Rain Protection System</h3>
-                <p>
-                    Electronics based project that detects rain and
-                    automatically opens a protective shelter.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact-section">
-    <div class="contact-container">
-  
-      <!-- LEFT -->
-      <div class="contact-info">
-        <h2>Contact Me</h2>
         <p>
-          Feel free to send me a message.  
-          I will try to respond as soon as possible.
+          I am <strong>Yashaullah Soomro</strong>, a bachelor student currently in my
+          <strong>3rd semester</strong> of Information Technology (IT).
+          I am studying at <strong>Shaikh Ayaz University of Shikarpur</strong>.
+        </p>
+
+        <p>
+          I have a strong interest in learning <strong>new technologies</strong> and
+          applying them in real‑life projects. Creating responsive and clean
+          web pages is something I truly enjoy.
+        </p>
+
+        <p>
+          I am still learning, but I have <strong>basic knowledge of frontend development</strong>
+          and a natural interest in <strong>coding and problem‑solving</strong>.
+        </p>
+
+        <ul class="about-details">
+          <li><strong>Name:</strong> Yashaullah Soomro</li>
+          <li><strong>City:</strong> Shikarpur, Pakistan</li>
+          <li><strong>Field:</strong> Information Technology (IT)</li>
+          <li><strong>Interest:</strong> Web Development & Problem Solving</li>
+        </ul>
+      </div>
+
+      <div class="about-image">
+        <img src="images/pic2.jpeg" alt="About">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+<section id="skills" class="skills-section">
+
+    <div class="skills-header">
+      <h2>My Skills</h2>
+      <span class="skills-line"></span>
+    </div>
+  
+    <div class="skills-grid">
+  
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-pen-nib"></i></div>
+        <h3>Graphic Designing</h3>
+        <p>
+          I have strong understanding of graphic design concepts and
+          I also hold a Coursera certificate in Adobe tools.
         </p>
       </div>
   
-      <!-- RIGHT -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>
+          I design responsive websites using HTML, CSS and JavaScript
+          with clean and modern layouts.
+        </p>
+      </div>
+  
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fab fa-java"></i></div>
+        <h3>Java Programming</h3>
+        <p>
+          I have good command over Java language concepts and have
+          completed Object-Oriented Programming.
+        </p>
+      </div>
+  
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Coding Skills</h3>
+        <p>
+          I enjoy writing clean code and continuously improve my
+          programming logic and structure.
+        </p>
+      </div>
+  
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+        <h3>Problem Solving</h3>
+        <p>
+          I have strong problem-solving skills and enjoy finding logical
+          solutions to coding challenges.
+        </p>
+      </div>
+  
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Freelancing</h3>
+        <p>
+          I have knowledge of freelancing platforms and understand how
+          to work with real-world clients.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- PROJECTS (NEW UNIQUE DESIGN) -->
+  <section id="projects" class="projects-section">
+    <div class="projects-header">
+      <h2 class="section-title">My Projects</h2>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="projects-list">
+
+      <div class="project-box">
+        <div class="project-number">01</div>
+        <h3>Library Management System (GUI)</h3>
+        <p>
+          Java OOP based GUI project where students can register, borrow and return books,
+          while admin manages books and registered students using secure login.
+        </p>
+      </div>
+
+      <div class="project-box">
+        <div class="project-number">02</div>
+        <h3>Graphic Design Work</h3>
+        <p>
+          Creative graphic design work including posters, social media banners and branding
+          designs created using Adobe tools with focus on modern visuals.
+        </p>
+      </div>
+
+      <div class="project-box">
+        <div class="project-number">03</div>
+        <h3>Rain Protection System</h3>
+        <p>
+          Electronics based project developed in Applied Physics that detects rain
+          automatically and opens a protective shelter using sensors.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-line"></span>
+        <p>
+          Feel free to send me a message.
+          I will try to respond as soon as possible.
+        </p>
+      </div>
+
       <form id="contactForm" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Submit</button>
       </form>
-      
-  
+
     </div>
   </section>
-  
-
-
-    <!-- PLACEHOLDERS -->
-    <section id="projects"></section>
-    <section id="contact"></section>
 
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
