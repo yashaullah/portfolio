@@ -1,4 +1,4 @@
-// ================= NAVBAR (AS IT IS) =================
+// ================= NAVBAR / HAMBURGER =================
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
@@ -7,6 +7,7 @@ hamburger.addEventListener("click", () => {
     mobileMenu.style.display === "block" ? "none" : "block";
 });
 
+// smooth scroll + close menu on click
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function (e) {
     const target = document.querySelector(this.getAttribute("href"));
@@ -19,10 +20,10 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-// ================= CONTACT FORM (FIXED) =================
+// ================= CONTACT FORM =================
 const form = document.getElementById("contactForm");
 
-// 🔴 Apna DEPLOYED Web App URL yahan rakho (jo tumne diya)
+// 🔴 YAHAN APNA DEPLOYED GOOGLE SCRIPT URL
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbyIJNCH-IiLuqQJ8DH08JV9iflSpuWZlwAImxcYja4AvSwHLv65Um_Z7UumIX3jiaXC/exec";
 
@@ -33,13 +34,13 @@ form.addEventListener("submit", function (e) {
     method: "POST",
     body: new FormData(form)
   })
-    .then(response => response.text())
+    .then(res => res.text())
     .then(data => {
       alert("Message sent successfully!");
       form.reset();
     })
-    .catch(error => {
+    .catch(err => {
       alert("Error! Try again later");
-      console.error("Error:", error);
+      console.error("Error:", err);
     });
 });
