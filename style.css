@@ -390,3 +390,44 @@
   background: transparent;     /* IMPORTANT */
 }
 
+/* ===== NEW SOCIAL ICON DESIGN ===== */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 18px;
+}
+
+.social-icons a {
+  width: 48px;
+  height: 48px;
+  background: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icons a i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  background: #ffb703;
+}
+
+.social-icons a:hover i {
+  color: #000;
+}
+
+/* Responsive Center */
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
+
